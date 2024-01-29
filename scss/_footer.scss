@@ -1,0 +1,18 @@
+footer {
+    grid-area: footer;
+    background-color: rgb(151, 202, 200);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    div {
+        ul {
+            li{
+                :hover{
+                    animation-name: zoom;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+}

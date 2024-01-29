@@ -1,0 +1,70 @@
+
+li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+h1 {
+    font-family: $font-1;
+    color: black;
+    font-size: $font-xxl;
+    letter-spacing: 5px;
+} 
+h2{
+    font-family: $font-2;
+    font-size: $font-l;
+    color: black;
+}
+h3 {
+    font-family: $font-2;
+    font-size: $font-s;
+    color: black;
+}
+.logo {
+    width: 120px;
+    vertical-align: middle;
+}
+.style-1 {
+    font-family: $font-2;
+    font-size: $font-xl;
+    color: map-get($colores, estilo );
+    text-shadow: -2px 3px 2px black ;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.style-2 {
+    font-family: $font-2;
+    font-size: $font-xl;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+button {
+    background-color: map-get($colores, boton );
+    border-radius: 2%;
+    border: 0;
+    padding: 0 7%;
+    cursor: pointer;
+}
+.img-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+#img-pp {
+    width: 350px;
+}
+#zoom-ani {
+    :hover {
+        animation-name: zoom;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}

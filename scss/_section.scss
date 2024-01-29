@@ -1,0 +1,18 @@
+section {
+    grid-area: section;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    grid-column: 2/6;
+    grid-row: 3/7;
+    a {
+        :hover {
+            animation-name: boton;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+    }
+}

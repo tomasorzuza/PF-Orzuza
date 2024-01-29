@@ -1,0 +1,24 @@
+.cursos {
+    display: flex;
+    background-color: map-get($colores, cursos );
+    padding: 3%;
+    border-radius: 2%;
+    margin: 4% 0;
+}
+.cursos-i {
+    @extend .cursos
+}
+
+.cursos-2 {
+    display: flex;
+    background-color: rgb(211, 218, 255);
+    padding: 10px 3%;
+    align-items: center;
+}
+.cursos-3 {
+    @extend .cursos-2;
+    flex-direction: column;
+}
+#cursos-nm {
+    grid-row: 2/7;
+}

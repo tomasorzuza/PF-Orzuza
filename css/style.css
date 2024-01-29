@@ -1,0 +1,272 @@
+header {
+  grid-area: header;
+  background: rgb(137, 133, 205);
+  background: linear-gradient(90deg, rgb(137, 133, 205) 0%, rgb(127, 190, 203) 77%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+}
+header div ul li :hover {
+  animation-name: barra;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+  padding: 5%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  grid-column: 2/6;
+  grid-row: 2/3;
+}
+
+section {
+  grid-area: section;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  grid-column: 2/6;
+  grid-row: 3/7;
+}
+section a :hover {
+  animation-name: boton;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(151, 202, 200);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+footer div ul li :hover {
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  color: black;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 35px;
+  color: black;
+}
+
+.logo {
+  width: 120px;
+  vertical-align: middle;
+}
+
+.style-1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: rgb(104, 179, 175);
+  text-shadow: -2px 3px 2px black;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.style-2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(85, 105, 161);
+  border-radius: 2%;
+  border: 0;
+  padding: 0 7%;
+  cursor: pointer;
+}
+
+.img-cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+#img-pp {
+  width: 350px;
+}
+
+#zoom-ani :hover {
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+body {
+  background-image: url(../img/fondo-2.svg);
+}
+
+.body-grid {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-areas: "header header header header header header" "main main main  main main main" "section section section section section section" "section section section section section section" "section section section section section section" "section section section section section section" "footer footer footer footer footer footer";
+}
+
+@media (max-width: 1200px) {
+  .cursos, .cursos-i {
+    flex-direction: column;
+  }
+  .cursos-i {
+    flex-direction: column-reverse;
+  }
+  .body-grid {
+    grid-template-columns: 0.4fr repeat(4, 1fr) 0.4fr;
+    grid-template-rows: 0.1fr 0.6fr 1fr 1fr 1fr 1fr 0.1fr;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .style-1 {
+    font-size: 35px;
+  }
+  .style-2 {
+    font-size: 35px;
+  }
+  .body-grid {
+    grid-template-columns: 0.1fr repeat(4, 1fr) 0.2fr;
+    grid-template-rows: 0.1fr 0.3fr 1fr 1fr 1fr 1fr 0.1fr;
+  }
+  #img-pp {
+    width: 250px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    width: 80px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+  .style-1 {
+    font-size: 30px;
+  }
+  .style-2 {
+    font-size: 30px;
+  }
+  .body-grid {
+    grid-template-columns: 0.1fr repeat(4, 1fr) 0.2fr;
+    grid-template-rows: 0.08fr 0.2fr 1fr 1fr 1fr 1fr 0.08fr;
+  }
+  #img-pp {
+    width: 150px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    width: 60px;
+  }
+  footer {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+.cursos, .cursos-i {
+  display: flex;
+  background-color: rgb(211, 218, 255);
+  padding: 3%;
+  border-radius: 2%;
+  margin: 4% 0;
+}
+
+.cursos-2, .cursos-3 {
+  display: flex;
+  background-color: rgb(211, 218, 255);
+  padding: 10px 3%;
+  align-items: center;
+}
+
+.cursos-3 {
+  flex-direction: column;
+}
+
+#cursos-nm {
+  grid-row: 2/7;
+}
+
+@keyframes zoom {
+  0% {
+    scale: 1;
+  }
+  75% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes boton {
+  0% {
+    background-color: rgb(85, 105, 161);
+  }
+  100% {
+    background-color: rgb(154, 154, 218);
+  }
+}
+@keyframes barra {
+  0% {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+  100% {
+    text-decoration-color: black;
+    text-decoration: underline;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+@keyframes zoom {
+    0% {
+        scale: 1;
+    }
+    75% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+@keyframes boton {
+    0% {
+        background-color: map-get($colores , boton );   
+    }
+    100% {
+        background-color: map-get($colores , boton-2 );
+    }
+}
+@keyframes barra {
+    0% {
+        text-decoration: underline;
+        text-decoration-color: transparent;
+    }
+    100% {
+        text-decoration-color: black;
+        text-decoration: underline;
+    }
+}
