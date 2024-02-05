@@ -44,7 +44,8 @@ section a :hover {
 
 footer {
   grid-area: footer;
-  background-color: rgb(151, 202, 200);
+  background: rgb(137, 133, 205);
+  background: linear-gradient(90deg, rgb(137, 133, 205) 0%, rgb(127, 190, 203) 77%);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -64,6 +65,7 @@ li {
 ul {
   text-decoration: none;
   list-style: none;
+  padding: 0%;
 }
 
 h1 {

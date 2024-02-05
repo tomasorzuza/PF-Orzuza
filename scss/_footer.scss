@@ -1,6 +1,7 @@
 footer {
     grid-area: footer;
-    background-color: rgb(151, 202, 200);
+    background: rgb(137,133,205);
+    background: linear-gradient(90deg, rgba(137,133,205,1) 0%, rgba(127,190,203,1) 77%);
     justify-content: center;
     align-items: center;
     display: flex;
